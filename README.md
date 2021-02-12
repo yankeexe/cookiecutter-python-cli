@@ -1,5 +1,13 @@
 # Cookiecutter for Python Click CLI
 
+## Comes with:
+
+ - [x] Pre-commit hooks
+ - [x] mypy
+ - [x] flake8
+ - [x] mkdocs-material
+ - [x] packaging
+
 ## Usage
 
 Install cookiecutter.

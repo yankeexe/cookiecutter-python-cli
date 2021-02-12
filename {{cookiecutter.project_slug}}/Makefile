@@ -3,7 +3,7 @@ CWD := $(PWD)
 TMP_PATH := $(CWD)/.tmp
 VENV_PATH := $(CWD)/venv
 
-.PHONY: test clean
+.PHONY: test clean docs
 .DEFAULT_GOAL := help
 
 # Read about configuring Makefile:

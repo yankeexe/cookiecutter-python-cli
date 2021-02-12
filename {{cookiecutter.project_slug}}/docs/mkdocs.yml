@@ -8,6 +8,8 @@ theme:
 nav:
   - Overview:
     - Introduction: index.md
+  - Commands:
+    - Overview: ./commands/index.md
 
 # Extensions
 markdown_extensions:
