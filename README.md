@@ -1,4 +1,4 @@
-# Cookiecutter for Python Click CLI
+# Cookiecutter for Python Click CLI :cookie:
 
 ## Comes with:
 
@@ -44,6 +44,22 @@ $ source venv/bin/activate
 $ make install
 ```
 
+## Take your CLI for a spin
+
+This Cookiecutter comes with two generic CLI commands, namely, `init` and `show`.
+
+> **NOTE**
+>
+>  `<<cli_command>>` is the executable command you choose for your CLI during project setup.
+
+```bash
+$ <<cli_command>> init
+```
+
+```bash
+$ <<cli_command>> show
+```
+
 ## Documentation
 
 1. Install documentation-related dependencies.
@@ -56,6 +72,24 @@ $ make docs
 
 ```bash
 $ make serve-docs
+```
+
+## Distribution
+
+> **NOTE**
+>
+> Make sure you have account in [PyPI](https://pypi.org/account/register/) before you try this out.
+
+To publish you CLI to PyPI, run:
+
+```bash
+$ make distributions
+```
+
+`dist` directory will be created inside your project directory. Upload it to PyPI using:
+
+```bash
+$ twine dist/*
 ```
 
 ## Help
