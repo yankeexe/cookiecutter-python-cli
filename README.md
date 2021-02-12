@@ -7,6 +7,7 @@
  - [x] flake8
  - [x] mkdocs-material
  - [x] packaging
+ - [x] Containerization
 
 ## Usage
 
@@ -58,6 +59,24 @@ $ <<cli_command>> init
 
 ```bash
 $ <<cli_command>> show
+```
+
+### Test with Docker
+
+CLI commands can be tested with Docker.
+
+1. Build an image for the CLI.
+
+    Image is tagged with the same name as the `cli_command`.
+
+```bash
+$ make docker-image
+```
+
+2. Run the command inside the container.
+
+```bash
+$ docker-run --rm <<cli_command>> init
 ```
 
 ## Documentation

@@ -44,6 +44,8 @@ distributions: # create distribution wheel and zip for PyPI
 	@python3 setup.py sdist bdist_wheel
 	@echo "Use `twine upload dist/*` to upload to PyPI"
 
+docker-image:
+	@docker build -t {{cookiecutter.cli_command}} .
 
 help: # Show this help
 	@egrep -h '\s#\s' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
