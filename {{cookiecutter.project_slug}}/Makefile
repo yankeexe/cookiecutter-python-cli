@@ -40,7 +40,7 @@ serve-docs: # serve docs on localhost
 	@mkdocs serve -f docs/mkdocs.yml
 
 distributions: # create distribution wheel and zip for PyPI
-	@pip install -r requirements/publish.in
+	@pip install -r requirements/publish.txt
 	@python3 setup.py sdist bdist_wheel
 	@echo "Use `twine upload dist/*` to upload to PyPI"
 
