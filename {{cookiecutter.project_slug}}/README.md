@@ -27,11 +27,11 @@ $ make install
 This Cookiecutter comes with two generic CLI commands, namely, `init` and `show`.
 
 ```bash
-$ {{cookiecutter.cli_command}} init
+$ {{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} init
 ```
 
 ```bash
-$ {{cookiecutter.cli_command}} show
+$ {{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} show
 ```
 
 ### Test with Docker
@@ -49,7 +49,7 @@ $ make docker-image
 2. Run the command inside the container.
 
 ```bash
-$ docker-run --rm {{cookiecutter.cli_command}} init
+$ docker-run --rm {{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} init
 ```
 
 ## Documentation
