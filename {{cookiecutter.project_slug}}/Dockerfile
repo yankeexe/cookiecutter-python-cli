@@ -1,9 +1,9 @@
-FROM python:3.8-slim-buster as main
+FROM python:3.8-slim-buster
 
 COPY . /app
 
 WORKDIR /app
 
-RUN pip install -e . -r requirements/dev.txt
+RUN python setup.py develop
 
 ENTRYPOINT [ "{{cookiecutter.cli_command}}" ]
