@@ -19,7 +19,11 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=requirements,
-    entry_points={"console_scripts": ["{{cookiecutter.cli_command}} = {{cookiecutter.project_slug}}.app:cli"]},
+    entry_points={
+        "console_scripts": [
+            "{{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} = {{cookiecutter.project_slug}}.app:cli"
+        ]
+    },
     classifiers=[
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
