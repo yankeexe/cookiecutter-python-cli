@@ -116,9 +116,7 @@ pymdown-extensions==8.1.1
 pyparsing==2.4.7
     # via packaging
 pytest==6.2.2
-    # via
-    #   -r requirements/dev.in
-    #   -r requirements\tests.in
+    # via -r requirements\tests.in
 pyyaml==5.4.1
     # via
     #   mkdocs
