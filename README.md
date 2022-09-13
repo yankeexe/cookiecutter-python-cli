@@ -4,12 +4,17 @@
 
 ## Comes with:
 
+ - [x] Containerization
  - [x] Pre-commit hooks
- - [x] mypy
+ - [x] black
+ - [x] click
  - [x] flake8
  - [x] mkdocs-material
+ - [x] mypy
  - [x] packaging
- - [x] Containerization
+ - [] whistles
+ - [] bells
+ 
 
 ## Usage
 
