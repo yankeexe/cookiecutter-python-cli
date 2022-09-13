@@ -1,6 +1,6 @@
 -r docs.in
 -r tests.in
-pip-tools
+pip-tools==6.8.0
 pre-commit
 tox
 mypy
