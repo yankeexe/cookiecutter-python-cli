@@ -41,13 +41,13 @@ $ make venv
 $ source venv/bin/activate
 ```
 
-4a. Linux - Install development dependencies with editable mode to test the CLI.
+4. For Linux / Mac Users only - Install development dependencies with editable mode to test the CLI.
 
 ```bash
 $ make install
 ```
 
-4b. Windows - Install development dependencies with editable mode to test the CLI.
+4. For Windows Users only - Install development dependencies with editable mode to test the CLI.
 
 ```bash
 $ pip install -e . -r requirements/dev.txt
@@ -55,7 +55,7 @@ $ pip install -e . -r requirements/dev.txt
 
 ## Take your CLI for a spin
 
-This Cookiecutter comes with two generic CLI commands, namely, `init` and `show`.
+This Cookiecutter comes with two generic CLI commands, namely, `init` and `hello`.
 
 > **NOTE**
 >
@@ -75,7 +75,7 @@ CLI commands can be tested with Docker.
 
 1. Build an image for the CLI.
 
-    Image is tagged with the same name as the `cli_command`.
+    Image is tagged <<cli_command>> name.
 
 ```bash
 $ make docker-image
@@ -89,19 +89,31 @@ $ docker-run --rm <<cli_command>> init
 
 ## Documentation
 
-1. Install documentation-related dependencies.
+1. For Linux / Mac Users only - Install documentation-related dependencies.
 
 ```bash
 $ make docs
 ```
 
-2. Serve the docs locally.
+1. For Windows Users only - Install development dependencies with editable mode to test the CLI.
+
+```bash
+$ pip install -r requirements/docs.txt
+```
+
+2. For Linux / Mac Users only - Serve the docs locally.
 
 ```bash
 $ make serve-docs
 ```
 
-## Distribution
+2. For Windows Users only - Serve the docs locally.
+
+```bash
+$ mkdocs serve -f docs/mkdocs.yml
+```
+
+## Distribution - For Linux / Mac Users only
 
 > **NOTE**
 >
@@ -119,7 +131,7 @@ $ make distributions
 $ twine dist/*
 ```
 
-## Help
+## Help - For Linux / Mac Users only
 
 For help related to make commands.
 
