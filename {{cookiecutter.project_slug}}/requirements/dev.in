@@ -5,7 +5,6 @@ pre-commit
 tox
 flake8
 black
-pre-commit
 click
 typing-extensions
 rich
