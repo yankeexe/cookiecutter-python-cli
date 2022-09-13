@@ -7,7 +7,7 @@ from {{cookiecutter.project_slug}}.commands import init, hello
 
 
 @click.group()
-def cli():
+def {{cookiecutter.cli_command}}():
     pass
 
 
