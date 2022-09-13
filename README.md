@@ -1,4 +1,4 @@
-# Cookiecutter for Python Click CLI :cookie:
+# A cookiecutter to bake a delicious Python Click CLI tool :cookie:
 
 ![Come to the dark side... We have cookies!](https://github.com/ltpitt/cookiecutter-python-cli/blob/master/darth_vader_cookies.jpg?raw=true)
 
