@@ -11,5 +11,5 @@ def {{cookiecutter.cli_command}}():
     pass
 
 
-cli.add_command(init)
-cli.add_command(hello)
+{{cookiecutter.cli_command}}.add_command(init)
+{{cookiecutter.cli_command}}.add_command(hello)
