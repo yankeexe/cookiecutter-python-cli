@@ -18,7 +18,7 @@ test: # run pytest in verbose mode
 	@pytest -vvv
 
 venv: # create a virtual env
-	@python3 -m venv venv
+	@python -m venv venv
 
 format: # format all files using black
 	@black .
@@ -41,7 +41,7 @@ serve-docs: # serve docs on localhost
 
 distributions: # create distribution wheel and zip for PyPI
 	@pip install -r requirements/publish.txt
-	@python3 setup.py sdist bdist_wheel
+	@python setup.py sdist bdist_wheel
 	@echo "Use `twine upload dist/*` to upload to PyPI"
 
 docker-image:
