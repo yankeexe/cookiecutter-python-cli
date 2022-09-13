@@ -41,10 +41,16 @@ $ make venv
 $ source venv/bin/activate
 ```
 
-4. Install development dependencies with editable mode to test the CLI.
+4a. Linux - Install development dependencies with editable mode to test the CLI.
 
 ```bash
 $ make install
+```
+
+4b. Windows - Install development dependencies with editable mode to test the CLI.
+
+```bash
+$ pip install -e . -r requirements/dev.txt
 ```
 
 ## Take your CLI for a spin
