@@ -12,8 +12,6 @@
  - [x] mkdocs-material
  - [x] mypy
  - [x] packaging
- - [ ] whistles
- - [ ] bells
  
 
 ## Usage
