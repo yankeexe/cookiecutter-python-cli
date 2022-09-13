@@ -13,4 +13,4 @@ from {{cookiecutter.project_slug}} import console
 def hello(count, name):
     """Simple program that greets NAME for a total of COUNT times."""
     for x in range(count):
-        console.print((f"Hello [italic red]{name}[/italic red]!")
+        console.print(f"Hello [italic red]{name}[/italic red]!")
