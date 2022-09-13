@@ -38,10 +38,16 @@ $ cookiecutter gh:ltpitt/cookiecutter-python-cli
 $ python -m venv venv
 ```
 
-3. Activate it.
+3. Linux / Mac - Activate it.
 
 ```bash
-$ source venv/bin/activate
+$ source venv/Scripts/activate
+```
+
+3. Windows - Activate it.
+
+```bash
+$ source venv/Scripts/Activate.ps1
 ```
 
 4. Linux / Mac - Install development dependencies with editable mode to test the CLI.
