@@ -41,13 +41,13 @@ $ make venv
 $ source venv/bin/activate
 ```
 
-4. For Linux / Mac Users only - Install development dependencies with editable mode to test the CLI.
+4. Linux / Mac - Install development dependencies with editable mode to test the CLI.
 
 ```bash
 $ make install
 ```
 
-4. For Windows Users only - Install development dependencies with editable mode to test the CLI.
+4. Windows - Install development dependencies with editable mode to test the CLI.
 
 ```bash
 $ pip install -e . -r requirements/dev.txt
@@ -89,31 +89,31 @@ $ docker-run --rm <<cli_command>> init
 
 ## Documentation
 
-1. For Linux / Mac Users only - Install documentation-related dependencies.
+1. Linux / Mac - Install documentation-related dependencies.
 
 ```bash
 $ make docs
 ```
 
-1. For Windows Users only - Install development dependencies with editable mode to test the CLI.
+1. Windows - Install development dependencies with editable mode to test the CLI.
 
 ```bash
 $ pip install -r requirements/docs.txt
 ```
 
-2. For Linux / Mac Users only - Serve the docs locally.
+2. Linux / Mac - Serve the docs locally.
 
 ```bash
 $ make serve-docs
 ```
 
-2. For Windows Users only - Serve the docs locally.
+2. Windows - Serve the docs locally.
 
 ```bash
 $ mkdocs serve -f docs/mkdocs.yml
 ```
 
-## Distribution - For Linux / Mac Users only
+## Linux / Mac - Distribution
 
 > **NOTE**
 >
@@ -131,7 +131,7 @@ $ make distributions
 $ twine dist/*
 ```
 
-## Help - For Linux / Mac Users only
+## Linux / Mac - Help
 
 For help related to make commands.
 
