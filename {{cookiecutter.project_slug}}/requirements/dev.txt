@@ -29,6 +29,8 @@ colorama==0.4.5
     #   click
     #   pytest
     #   tox
+commonmark==0.9.1
+    # via rich
 distlib==0.3.1
     # via virtualenv
 filelock==3.0.12
@@ -106,7 +108,9 @@ pycodestyle==2.9.1
 pyflakes==2.5.0
     # via flake8
 pygments==2.7.4
-    # via mkdocs-material
+    # via
+    #   mkdocs-material
+    #   rich
 pymdown-extensions==8.1.1
     # via mkdocs-material
 pyparsing==2.4.7
@@ -121,6 +125,8 @@ pyyaml==5.4.1
     #   pre-commit
 regex==2020.11.13
     # via nltk
+rich==12.5.1
+    # via -r requirements/dev.in
 six==1.15.0
     # via
     #   livereload
