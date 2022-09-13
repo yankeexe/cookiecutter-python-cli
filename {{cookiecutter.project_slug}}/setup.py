@@ -5,7 +5,7 @@ import setuptools
 with open("README.md", "r") as f:
     long_description = f.read()
 
-requirements = ["click", "rich<=7.1.0", "simple-term-menu", "requests"]
+requirements = ["click", "rich", "simple-term-menu", "requests"]
 
 
 setuptools.setup(
