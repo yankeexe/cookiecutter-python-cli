@@ -66,7 +66,7 @@ $ <<cli_command>> init
 ```
 
 ```bash
-$ <<cli_command>> show
+$ <<cli_command>> hello
 ```
 
 ### Test with Docker
