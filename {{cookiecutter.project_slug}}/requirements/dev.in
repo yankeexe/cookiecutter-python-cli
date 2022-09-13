@@ -3,7 +3,6 @@
 pip-tools
 pre-commit
 tox
-mypy
 flake8
 black
 pre-commit
