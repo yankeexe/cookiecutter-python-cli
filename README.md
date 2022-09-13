@@ -35,7 +35,7 @@ $ cookiecutter gh:ltpitt/cookiecutter-python-cli
 2. Create a virtual environment.
 
 ```bash
-$ make venv
+$ python -m venv venv
 ```
 
 3. Activate it.
