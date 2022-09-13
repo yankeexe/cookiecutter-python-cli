@@ -24,7 +24,7 @@ $ make install
 
 ## Take your CLI for a spin
 
-This Cookiecutter comes with two generic CLI commands, namely, `init` and `show`.
+This Cookiecutter comes with two generic CLI commands, namely, `init` and `hello`.
 
 ```bash
 $ {{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} init
