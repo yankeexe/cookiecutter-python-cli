@@ -2,6 +2,6 @@
     "project_name": "Awesome CLI",
     "project_slug": "{{cookiecutter.project_name.strip().lower().replace(' ', '_').replace('-', '_')}}",
     "cli_command": "acli",
-    "author": "Davide Nastri",
+    "author": "Yankee Maharjan",
     "description": "This CLI tool does one thing and does it well."
 }
