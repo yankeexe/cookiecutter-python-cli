@@ -1,5 +1,5 @@
 # Important note
-A newer version of this Cookiecutter, using the amazing [Typer](https://typer.tiangolo.com/), is work in progress and it is being built [here](https://github.com/ltpitt/python-cookiecutter-typer-cli).
+A newer version of this Cookiecutter (using the amazing [Typer](https://typer.tiangolo.com/)!) is currently work in progress and available [here](https://github.com/ltpitt/python-cookiecutter-typer-cli).
 
 # A cookiecutter to bake tasty Python Click CLI tools :cookie:
 
