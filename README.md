@@ -1,3 +1,6 @@
+# Important note
+A newer version of this Cookiecutter, using the amazing [Typer](https://typer.tiangolo.com/), is work in progress and it is being built [here](https://github.com/ltpitt/python-cookiecutter-typer-cli).
+
 # A cookiecutter to bake tasty Python Click CLI tools :cookie:
 
 ![Come to the dark side... We have cookies!](https://github.com/ltpitt/cookiecutter-python-cli/blob/master/darth_vader_cookies.jpg?raw=true)
