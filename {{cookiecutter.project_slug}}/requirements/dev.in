@@ -3,8 +3,8 @@
 pip-tools
 pre-commit
 tox
-mypy
 flake8
-pytest
 black
-pre-commit
+click
+typing-extensions
+rich

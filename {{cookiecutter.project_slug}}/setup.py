@@ -5,7 +5,7 @@ import setuptools
 with open("README.md", "r") as f:
     long_description = f.read()
 
-requirements = ["click", "rich<=7.1.0", "simple-term-menu", "requests"]
+requirements = ["click", "rich", "simple-term-menu", "requests"]
 
 
 setuptools.setup(
@@ -21,7 +21,7 @@ setuptools.setup(
     install_requires=requirements,
     entry_points={
         "console_scripts": [
-            "{{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} = {{cookiecutter.project_slug}}.app:cli"
+            "{{cookiecutter.cli_command.strip().lower().replace(' ', '_').replace('-', '_')}} = {{cookiecutter.project_slug}}.app:{{cookiecutter.cli_command}}"
         ]
     },
     classifiers=[

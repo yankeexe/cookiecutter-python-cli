@@ -5,13 +5,6 @@ theme:
   features:
     - navigation.instant
 
-nav:
-  - Overview:
-    - Introduction: index.md
-  - Commands:
-    - Overview: ./commands/index.md
-
-# Extensions
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
@@ -37,3 +30,12 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - mkdocs-click
+
+plugins:
+    - search
+    - markdownextradata: {}
+    
+    
+extra:
+  cli_command: "{{cookiecutter.cli_command}}"

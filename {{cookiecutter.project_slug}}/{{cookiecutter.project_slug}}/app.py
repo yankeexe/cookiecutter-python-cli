@@ -3,13 +3,13 @@ Entrypoint for CLI.
 """
 import click
 
-from {{cookiecutter.project_slug}}.commands import init, show
+from {{cookiecutter.project_slug}}.commands import init, hello
 
 
 @click.group()
-def cli():
+def {{cookiecutter.cli_command}}():
     pass
 
 
-cli.add_command(init)
-cli.add_command(show)
+{{cookiecutter.cli_command}}.add_command(init)
+{{cookiecutter.cli_command}}.add_command(hello)

@@ -1,13 +1,21 @@
-# Cookiecutter for Python Click CLI :cookie:
+# Important note
+A newer version of this Cookiecutter (using the amazing [Typer](https://typer.tiangolo.com/)!) is currently work in progress and available [here](https://github.com/ltpitt/python-cookiecutter-typer-cli).
+
+# A cookiecutter to bake tasty Python Click CLI tools :cookie:
+
+![Come to the dark side... We have cookies!](https://github.com/ltpitt/cookiecutter-python-cli/blob/master/darth_vader_cookies.jpg?raw=true)
 
 ## Comes with:
 
+ - [x] Containerization
  - [x] Pre-commit hooks
- - [x] mypy
+ - [x] black
+ - [x] click
  - [x] flake8
  - [x] mkdocs-material
+ - [x] mypy
  - [x] packaging
- - [x] Containerization
+ 
 
 ## Usage
 
@@ -30,24 +38,36 @@ $ cookiecutter gh:yankeexe/cookiecutter-python-cli
 2. Create a virtual environment.
 
 ```bash
-$ make venv
+$ python -m venv venv
 ```
 
-3. Activate it.
+3. Linux / Mac - Activate it.
 
 ```bash
-$ source venv/bin/activate
+$ source venv/Scripts/activate
 ```
 
-4. Install development dependencies with editable mode to test the CLI.
+3. Windows - Activate it.
+
+```bash
+$ source venv/Scripts/Activate.ps1
+```
+
+4. Linux / Mac - Install development dependencies with editable mode to test the CLI.
 
 ```bash
 $ make install
 ```
 
+4. Windows - Install development dependencies with editable mode to test the CLI.
+
+```bash
+$ pip install -e . -r requirements/dev.txt
+```
+
 ## Take your CLI for a spin
 
-This Cookiecutter comes with two generic CLI commands, namely, `init` and `show`.
+This Cookiecutter comes with two generic CLI commands, namely, `init` and `hello`.
 
 > **NOTE**
 >
@@ -58,7 +78,7 @@ $ <<cli_command>> init
 ```
 
 ```bash
-$ <<cli_command>> show
+$ <<cli_command>> hello
 ```
 
 ### Test with Docker
@@ -67,7 +87,7 @@ CLI commands can be tested with Docker.
 
 1. Build an image for the CLI.
 
-    Image is tagged with the same name as the `cli_command`.
+    Image is tagged <<cli_command>> name.
 
 ```bash
 $ make docker-image
@@ -81,19 +101,31 @@ $ docker-run --rm <<cli_command>> init
 
 ## Documentation
 
-1. Install documentation-related dependencies.
+1. Linux / Mac - Install documentation-related dependencies.
 
 ```bash
 $ make docs
 ```
 
-2. Serve the docs locally.
+1. Windows - Install development dependencies with editable mode to test the CLI.
+
+```bash
+$ pip install -r requirements/docs.txt
+```
+
+2. Linux / Mac - Serve the docs locally.
 
 ```bash
 $ make serve-docs
 ```
 
-## Distribution
+2. Windows - Serve the docs locally.
+
+```bash
+$ mkdocs serve -f docs/mkdocs.yml
+```
+
+## Linux / Mac - Distribution
 
 > **NOTE**
 >
@@ -111,7 +143,7 @@ $ make distributions
 $ twine dist/*
 ```
 
-## Help
+## Linux / Mac - Help
 
 For help related to make commands.
 
